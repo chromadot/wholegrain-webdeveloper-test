@@ -1,0 +1,19 @@
+{
+    "transport": "scp",
+    "hostname": "ukm16.siteground.biz",
+    "port": 18765,
+    "username": "chromado",
+    "password": "qsYKznHBuli5r8MpVeGW",
+    "passphrase": "qsYKznHBuli5r8MpVeGW",
+    "target": "/home/chromado/domains/sub/public_html/cd001/wp-content/themes/wholegrain_theme",
+    "keyfile": "/Work/SiteGround/sftp_key.ppk",
+    "uploadOnSave": true,
+    "ignore": [
+        ".remote-sync.json",
+        ".git/**"
+    ],
+    "watchx":[
+        "/css/style.css",
+        "/js/chroma-dist.js"
+    ]
+}

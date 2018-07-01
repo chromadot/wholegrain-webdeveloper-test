@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'gilroylight';
+    src: url('fonts/metropolis-extralight-webfont.woff2') format('woff2'),
+         url('fonts/metropolis-extralight-webfont.woff') format('woff');
+
+}
+
+$wg_blue: #00698f;
+$side_padding: 6em;
+
+body {
+    font-family: gilroylight;
+    color:$wg_blue;
+    background:#555;
+    font-size:31px;
+    letter-spacing: 0.04em;
+    line-height:1.4em;
+}
+
+p,a,h1,h2 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size:2em;
+    letter-spacing: 0.04em;
+    line-height:1.4em;
+    margin:0.6em 0;
+}
+
+#wg-container {
+    background:#fff;
+    position: relative;
+    display: block;
+    width:1920px;
+    margin:0 auto;
+}
+
+#wg-header {
+    position: relative;
+    display: block;
+    height:586px;
+    background-color: $wg_blue;
+    padding:1.5em $side_padding;
+    box-sizing: border-box;
+
+    #wg-header-slant {
+        position: absolute;
+        display: block;
+        bottom:0;
+        left:0;
+        width:100%;
+    }
+
+    #wg-header-top {
+        position: relative;
+
+        #wg-logo {
+            width:346px;
+        }
+
+        #wg-burger-menu {
+            position: relative;
+            display: block;
+            float:right;
+            width:62px;
+            top:0;
+            box-sizing: border-box;
+            padding: 0 10px;
+
+            .wg-burger-line {
+                display: relative;
+                background-color:#fff;
+                display: block;
+                margin:13px 0;
+                height:3px;
+                width:100%;
+                box-sizing: border-box;
+            }
+
+        }
+
+    }
+
+    #wg-header-slogan {
+        color:#fff;
+        text-align: right;
+        margin:3em 0;
+    }
+
+}
+
+#wg-main-section {
+    padding:1em $side_padding 5em;
+}
+
+$info_space: 0.8em;
+#wg-info-boxes {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width:100%;
+    margin-top:3em;
+    margin-bottom:4em;
+
+    .wg-info-box {
+        position: relative;
+        display: table-cell;
+        padding-bottom:2em;
+
+        &#wg-info-box-1 {
+            padding-right:$info_space;
+        }
+
+        &#wg-info-box-2 {
+            padding-left:$info_space/2;
+            padding-right:$info_space/2;
+        }
+
+        &#wg-info-box-3 {
+            padding-left:$info_space;
+        }
+
+        img {
+            width:100%;
+        }
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+
+        a {
+            position: absolute;
+            text-decoration: none;
+            bottom:0;
+            color:#fff;
+            background:$wg_blue;
+            padding:0.5em 0.75em;
+            box-sizing: border-box;
+        }
+
+    }
+
+}
